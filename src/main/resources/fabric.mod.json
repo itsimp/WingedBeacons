@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "wingedbeacons",
+  "version": "${version}",
+
+  "name": "Winged Beacons",
+  "description": "Adds additional flight functionality to beacons as well as a flight effect.",
+  "authors": [
+    "ItsImp"
+  ],
+  "contact": {
+
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/wingedbeacons/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.imp.wingedbeacons.WingedBeacons"
+    ],
+    "client": [
+      "com.imp.wingedbeacons.WingedBeaconsClient"
+    ]
+  },
+  "mixins": [
+    "wingedbeacons.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  },
+
+  "accessWidener": "assets/wingedbeacons/aw.accesswidener"
+}
